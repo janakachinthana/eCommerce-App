@@ -133,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
                               Toast.makeText(LoginActivity.this, "Wllcome Admin, You are Logged in Successfully...!",Toast.LENGTH_SHORT).show();
                               loadingBar.dismiss();
 
-                              Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
+                              Intent intent = new Intent(LoginActivity.this, Categories.class);
                               startActivity(intent);
                           }
                           else if(parentDbName.equals("Users"))
@@ -141,7 +141,7 @@ public class LoginActivity extends AppCompatActivity {
                               Toast.makeText(LoginActivity.this, "Logged in Successfully...!",Toast.LENGTH_SHORT).show();
                               loadingBar.dismiss();
 
-                              Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                              Intent intent = new Intent(LoginActivity.this, Customer_view_Category.class);
                               Prevalent.CurrentOnlineUser = usersData;
                               startActivity(intent);
                           }

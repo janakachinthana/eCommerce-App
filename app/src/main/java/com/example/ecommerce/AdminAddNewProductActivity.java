@@ -33,6 +33,7 @@ import java.util.HashMap;
 
 public class AdminAddNewProductActivity extends AppCompatActivity {
 
+
     private String categoryName, Description, Price, Pname, saveCurrentDate,  saveCurrentTime;
     private Button AddNewProductButton;
     private ImageView InputProductImage;

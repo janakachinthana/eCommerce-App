@@ -6,9 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class AdminCategoryActivity extends AppCompatActivity {
+public class Customer_Main_Category_Activity extends AppCompatActivity {
 
     private ImageView tShirts, sportsTShirts, femaleDresses, sweathers;
     private ImageView glasses, hatsCaps, walletsBagsPurses, shoes;
@@ -18,29 +17,27 @@ public class AdminCategoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_category);
+        setContentView(R.layout.activity_customer__main__category_);
 
-
-
-        tShirts = (ImageView) findViewById(R.id.t_shirts);
-        sportsTShirts = (ImageView) findViewById(R.id.sports_t_shirts);
-        femaleDresses = (ImageView) findViewById(R.id.female_dresses);
-        sweathers = (ImageView) findViewById(R.id.sweather);
-        glasses = (ImageView) findViewById(R.id.glasses);
-        hatsCaps = (ImageView) findViewById(R.id.hats_caps);
-        walletsBagsPurses = (ImageView) findViewById(R.id.purses_bags_wallets);
-        shoes = (ImageView) findViewById(R.id.shoess);
-        headPhonesHandsFree = (ImageView) findViewById(R.id.headphoness_handsfree);
-        laptops = (ImageView) findViewById(R.id.laptops_pc);
-        watches = (ImageView) findViewById(R.id.watches);
-        mobilePhones = (ImageView) findViewById(R.id.mobiles_phones);
+        tShirts = (ImageView) findViewById(R.id.customer_t_shirts);
+        sportsTShirts = (ImageView) findViewById(R.id.customer_sports_t_shirts);
+        femaleDresses = (ImageView) findViewById(R.id.customer_female_dresses);
+        sweathers = (ImageView) findViewById(R.id.customer_sweather);
+        glasses = (ImageView) findViewById(R.id.customer_glasses);
+        hatsCaps = (ImageView) findViewById(R.id.customer_hats_caps);
+        walletsBagsPurses = (ImageView) findViewById(R.id.customer_purses_bags_wallets);
+        shoes = (ImageView) findViewById(R.id.customer_shoess);
+        headPhonesHandsFree = (ImageView) findViewById(R.id.customer_headphoness_handsfree);
+        laptops = (ImageView) findViewById(R.id.customer_laptops_pc);
+        watches = (ImageView) findViewById(R.id.customer_watches);
+        mobilePhones = (ImageView) findViewById(R.id.customer_mobiles_phones);
 
 
 
         tShirts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "tShirts");
                 startActivity(intent);
             }
@@ -49,7 +46,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         sportsTShirts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "sportsTShirts");
                 startActivity(intent);
             }
@@ -59,7 +56,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         femaleDresses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "femaleDresses");
                 startActivity(intent);
             }
@@ -68,7 +65,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         sweathers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "sweathers");
                 startActivity(intent);
             }
@@ -77,7 +74,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         glasses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "glasses");
                 startActivity(intent);
             }
@@ -86,7 +83,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         hatsCaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "hatsCaps");
                 startActivity(intent);
             }
@@ -95,7 +92,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         walletsBagsPurses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "walletsBagsPurses");
                 startActivity(intent);
             }
@@ -104,7 +101,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         shoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "shoes");
                 startActivity(intent);
             }
@@ -113,7 +110,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         headPhonesHandsFree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "headPhonesHandsFree");
                 startActivity(intent);
             }
@@ -122,7 +119,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         laptops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "laptops");
                 startActivity(intent);
             }
@@ -131,7 +128,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         watches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "watches");
                 startActivity(intent);
             }
@@ -140,11 +137,12 @@ public class AdminCategoryActivity extends AppCompatActivity {
         mobilePhones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductActivity.class);
+                Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "mobilePhones");
                 startActivity(intent);
             }
         });
+
 
     }
 }

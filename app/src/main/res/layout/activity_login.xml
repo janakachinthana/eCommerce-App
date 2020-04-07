@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/wallpaper4"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/login_applogo"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:src="@drawable/applogo"
+        android:src="@drawable/cart"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         />
 
     <EditText
@@ -27,8 +27,8 @@
         android:layout_marginRight="15dp"
         android:hint="Phone Number"
         android:inputType="number"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         />
@@ -45,8 +45,8 @@
         android:layout_marginTop="6dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         />
@@ -65,8 +65,8 @@
             android:layout_height="wrap_content"
             style="@style/Material.Drawable.CheckBox"
             android:text="Remember me"
-            android:textColor="@color/colorPrimaryDark"
-            app:cbd_strokeColor="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            app:cbd_strokeColor="@android:color/white"
             android:gravity="center_vertical"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgrt Password?"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
             android:textSize="17sp"
             android:textStyle="bold"
             android:layout_marginLeft="80dp"
@@ -97,7 +97,7 @@
         android:background="@drawable/buttons"
         android:padding="17dp"
         android:textAllCaps="false"
-        android:textSize="18dp"
+        android:textSize="25dp"
         android:text="Login"
         android:textColor="@android:color/white"/>
 
@@ -108,7 +108,7 @@
         android:text="I`m an Admin?"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/login_btn"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginLeft="80dp"
@@ -121,7 +121,7 @@
         android:text="I`m not an Admin?"
        android:layout_alignParentStart="true"
         android:layout_below="@+id/login_btn"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginLeft="80dp"

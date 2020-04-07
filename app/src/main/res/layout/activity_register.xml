@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@drawable/wallpaper4"
     tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/register_applogo"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:src="@drawable/applogo"
+        android:src="@drawable/cart"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="190dp"
         />
@@ -26,8 +26,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:hint="Full Name"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         />
@@ -44,8 +44,8 @@
         android:hint="Phone Number"
         android:inputType="number"
         android:layout_marginTop="6dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         />
@@ -62,8 +62,8 @@
         android:layout_marginTop="6dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:textSize="17sp"
         android:textStyle="bold"
         />

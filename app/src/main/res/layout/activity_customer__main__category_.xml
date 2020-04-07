@@ -8,7 +8,7 @@
     tools:context=".AdminCategoryActivity">
 
     <TextView
-        android:id="@+id/slogan_category"
+        android:id="@+id/customer_slogan_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -22,36 +22,36 @@
 
 
     <LinearLayout
-        android:id="@+id/linear1_category_layout"
+        android:id="@+id/customer_linear1_category_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/slogan_category"
+        android:layout_below="@+id/customer_slogan_category"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         >
         <ImageView
-            android:id="@+id/t_shirts"
+            android:id="@+id/customer_t_shirts"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/apple"
             />
 
         <ImageView
-            android:id="@+id/sports_t_shirts"
+            android:id="@+id/customer_sports_t_shirts"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/banana"
             />
         <ImageView
-            android:id="@+id/female_dresses"
+            android:id="@+id/customer_female_dresses"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/watermelon"
             />
         <ImageView
-            android:id="@+id/sweather"
+            android:id="@+id/customer_sweather"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/cake"
@@ -60,36 +60,36 @@
 
 
     <LinearLayout
-        android:id="@+id/linear2_category_layout"
+        android:id="@+id/customer_linear2_category_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/linear1_category_layout"
+        android:layout_below="@+id/customer_linear1_category_layout"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         >
         <ImageView
-            android:id="@+id/glasses"
+            android:id="@+id/customer_glasses"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/cake"
             />
 
         <ImageView
-            android:id="@+id/purses_bags_wallets"
+            android:id="@+id/customer_purses_bags_wallets"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/apple"
             />
         <ImageView
-            android:id="@+id/hats_caps"
+            android:id="@+id/customer_hats_caps"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/banana"
             />
         <ImageView
-            android:id="@+id/shoess"
+            android:id="@+id/customer_shoess"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/watermelon"
@@ -98,36 +98,36 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear3_category_layout"
+        android:id="@+id/customer_linear3_category_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/linear2_category_layout"
+        android:layout_below="@+id/customer_linear2_category_layout"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         >
         <ImageView
-            android:id="@+id/headphoness_handsfree"
+            android:id="@+id/customer_headphoness_handsfree"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/watermelon"
             />
 
         <ImageView
-            android:id="@+id/laptops_pc"
+            android:id="@+id/customer_laptops_pc"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/banana"
             />
         <ImageView
-            android:id="@+id/watches"
+            android:id="@+id/customer_watches"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/cake"
             />
         <ImageView
-            android:id="@+id/mobiles_phones"
+            android:id="@+id/customer_mobiles_phones"
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:src="@drawable/apple"
