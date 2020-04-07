@@ -142,6 +142,7 @@ public class LoginActivity extends AppCompatActivity {
                               loadingBar.dismiss();
 
                               Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                              Prevalent.CurrentOnlineUser = usersData;
                               startActivity(intent);
                           }
                       }

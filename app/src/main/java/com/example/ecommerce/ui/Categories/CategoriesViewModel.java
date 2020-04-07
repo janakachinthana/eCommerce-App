@@ -1,16 +1,15 @@
-package com.example.ecommerce.ui.slideshow;
+package com.example.ecommerce.ui.Categories;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
-
+public class CategoriesViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public CategoriesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is Categories fragment");
     }
 
     public LiveData<String> getText() {
