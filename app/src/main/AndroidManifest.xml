@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Customer_Main_Category_Activity"></activity>
+        <activity android:name=".CartActivity"></activity>
+        <activity android:name=".Product_Details_Activity" />
+        <activity android:name=".Customer_Main_Category_Activity" />
         <activity android:name="com.example.authenticatorapp.other.Customer_Main_Category_Activity" />
         <activity android:name=".Customer_view_Category" />
         <activity android:name=".Categories" />
