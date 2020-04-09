@@ -12,6 +12,7 @@
     tools:context=".AdminMaintainProductActivity">
 
     <RelativeLayout
+        android:background="@drawable/wallpaper4"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -49,6 +50,7 @@
             android:background="@drawable/input_design"
             android:padding="12dp"
             android:layout_margin="5dp"
+            android:inputType="number"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
