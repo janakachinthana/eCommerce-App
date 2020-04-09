@@ -31,9 +31,11 @@ public class Product_Details_Activity extends AppCompatActivity {
 
     private ImageView productImage;
     private ElegantNumberButton numberButton;
+
     private TextView productPrice, productDescription, productName;
     private Button addToCartButton;
-    private String productID = "";
+
+    private String productID = "", state = "Normal";
 
 
 
@@ -58,7 +60,15 @@ public class Product_Details_Activity extends AppCompatActivity {
         addToCartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addingToCartList();
+
+                if (state.equals( "Order Placed" ) || state.equals( "Order Shipped" ))
+                {
+                    Toast.makeText( Product_Details_Activity.this, "you can add puechase more products, once your order is shipped or confirmed...", Toast.LENGTH_LONG ).show();
+                }
+                else
+                {
+                    addingToCartList();
+                }
             }
         });
 
@@ -75,7 +85,7 @@ public class Product_Details_Activity extends AppCompatActivity {
                     Products products = dataSnapshot.getValue(Products.class);
 
                     productName.setText(products.getPname());
-                    productPrice.setText("Rs. " + products.getPrice());
+                    productPrice.setText(products.getPrice());
                     productDescription.setText(products.getDescription());
                     Picasso.get().load(products.getImage()).into(productImage);
 
@@ -90,6 +100,12 @@ public class Product_Details_Activity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        checkOrderState();
+    }
+
     private void addingToCartList() {
         String saveCurrentTime, saveCurrentDate;
 
@@ -99,7 +115,7 @@ public class Product_Details_Activity extends AppCompatActivity {
         saveCurrentDate= currentDate.format(calForDate.getTime());
 
         SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
-        saveCurrentTime= currentDate.format(calForDate.getTime());
+        saveCurrentTime= currentTime.format(calForDate.getTime());
 
         final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child("Cart List");
 
@@ -130,6 +146,7 @@ public class Product_Details_Activity extends AppCompatActivity {
                                             if(task.isSuccessful())
                                             {
                                                 Toast.makeText(Product_Details_Activity.this, "Added to cart List.", Toast.LENGTH_SHORT).show();
+
                                                 Intent intent = new Intent(Product_Details_Activity.this, HomeActivity.class);
                                                 startActivity(intent);
                                             }
@@ -155,4 +172,35 @@ public class Product_Details_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     };
+
+    private void checkOrderState()
+    {
+        DatabaseReference orderRef;
+        orderRef = FirebaseDatabase.getInstance().getReference().child( "Orders" ).child( Prevalent.CurrentOnlineUser.getPhone() );
+        orderRef.addValueEventListener( new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists())
+                {
+                    String shippingState = dataSnapshot.child( "state" ).getValue().toString();
+
+                    if (shippingState.equals("shipped"))
+                    {
+                        state = "Order Shipped";
+                    }
+                    else if (shippingState.equals( "not shipped" ))
+                    {
+
+                        state = "Order Placed";
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        } );
+    }
 }

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginRight="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
     app:cardElevation="15dp">
 
     <RelativeLayout
@@ -11,7 +12,8 @@
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
         android:padding="10dp"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
+
 
         >
 
@@ -22,7 +24,6 @@
             android:text="Product Name"
             android:textColor="@android:color/white"
             android:textSize="14dp"
-
             android:textStyle="bold"
             />
 

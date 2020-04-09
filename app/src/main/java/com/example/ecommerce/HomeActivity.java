@@ -101,7 +101,7 @@ public class HomeActivity extends AppCompatActivity {
 
                         holder.txtPruductName.setText(model.getPname());
                         holder.TxtPruductDescription.setText(model.getDescription());
-                        holder.txtProductPrice.setText("Price = Rs. " + model.getPrice() );
+                        holder.txtProductPrice.setText(model.getPrice() );
                         Picasso.get().load(model.getImage()).into(holder.imageView);
 
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
