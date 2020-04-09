@@ -112,6 +112,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if (!type.equals( "Admin" ) )
         {
             userNameTextView.setText(Prevalent.CurrentOnlineUser.getName());
+            Picasso.get().load( Prevalent.CurrentOnlineUser.getImage() ).placeholder( R.drawable.profile ).into( profileImageView );
         }
 
         recyclerView = findViewById(R.id.recycler_menu);
@@ -238,6 +239,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 //                startActivity(intent);
 //            }
 //        }
+
         else if (id == R.id.nav_categories)
         {
 
