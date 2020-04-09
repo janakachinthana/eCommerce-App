@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText InputPhoneNumber, InputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
-    private TextView AdminLink, NotAdminLink;
+    private TextView AdminLink, NotAdminLink, ForgetPasswordLink;
 
     private String parentDbName = "Users";
     private CheckBox chkBoxRememberMe;
@@ -43,9 +43,11 @@ public class LoginActivity extends AppCompatActivity {
         LoginButton = (Button) findViewById(R.id.login_btn);
         InputPhoneNumber = (EditText) findViewById(R.id.login_phone_number_input);
         InputPassword = (EditText) findViewById(R.id.login_password_input);
-        loadingBar = new ProgressDialog(this);
         AdminLink = (TextView) findViewById(R.id.admin_panel_link);
         NotAdminLink = (TextView) findViewById(R.id.no_admin_panel_link);
+        ForgetPasswordLink = findViewById( R.id.forget_password_link );
+        loadingBar = new ProgressDialog(this);
+
 
         chkBoxRememberMe = (CheckBox)  findViewById(R.id.remember_me_chkb);
         Paper.init(this);
