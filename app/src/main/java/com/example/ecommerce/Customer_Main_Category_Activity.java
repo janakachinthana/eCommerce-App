@@ -39,6 +39,7 @@ public class Customer_Main_Category_Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Customer_Main_Category_Activity.this, HomeActivity.class);
                 intent.putExtra("category", "tShirts");
+
                 startActivity(intent);
             }
         });

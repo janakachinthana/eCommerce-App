@@ -141,6 +141,7 @@ public class CartActivity extends AppCompatActivity {
             @NonNull
             @Override
             public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cart_items_layout, parent, false);
                 CartViewHolder holder = new CartViewHolder(view);
                 return holder;
